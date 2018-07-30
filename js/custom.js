@@ -4,7 +4,7 @@ $(window).on("scroll", function() {
 $(".scroll-down a").on("click", function(e) {
   var t = $(this);
   $("html, body").stop().animate({
-      scrollTop: $(t.attr("href")).offset().top - 0
+      scrollTop: $(t.attr("href")).offset().top
   }, 1500, "easeInOutExpo"),
   e.preventDefault()
 })
